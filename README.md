@@ -1,5 +1,6 @@
-# Personal-Porfolio-Website
-This is my website portfolio. The website explains who I am and the projects I've worked on for the past year or so.
+﻿## Live site link (dev branch):
+
+https://portfolio-git-development-edixlks-projects.vercel.app/
 
 ### updates
 
@@ -66,4 +67,3 @@ This is my website portfolio. The website explains who I am and the projects I'v
 - The "Get in touch button" is only visible on smaller screens with the mobile navbar. This was done to avoid confusion on Desktop view.
 
 - Fixed mobile/devices with smaller screens. It would remain visible when scrolling.
-

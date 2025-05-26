@@ -1,0 +1,604 @@
+/* FOR dev BRANCH */
+/* google icon style*/
+.material-symbols-outlined {
+  color: white;
+  display: none;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(./assets/fonts/Host_Grotesk/HostGrotesk-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: druk;
+  src: url(./assets/fonts/Druk\ Wide\ Bold\ Regular.ttf);
+}
+
+/* =============== BASIC LAYOUT ==============*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  font-family: font1;
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--prim-blue);
+}
+
+:root {
+  --prim-blue: rgb(1, 7, 22);
+  --prim-blue-bg: rgba(4, 9, 22, 0.824);
+  --white: rgb(172, 208, 231);
+  --light-blue: #a1cbf6;
+}
+
+::selection {
+  color: #fff;
+  background-color: rgb(3, 82, 173);
+}
+
+:is(h1, .usr-name-handle) {
+  font-family: druk;
+}
+
+/*=========================================*/
+
+/* HEADER BG IMAGE (HERO SECTION)*/
+header {
+  background-image: url(./assets/bg-image/thumb-1920-1318499.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  background-attachment: fixed;
+  background-color: var(--prim-blue-bg);
+  height: 100dvh;
+}
+
+/* NAVBAR*/
+
+nav {
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: var(--light-blue);
+  font-size: 1.5rem;
+  border-radius: 20px;
+  padding: 0.2em 0.8em;
+  margin: 0 0.2em;
+}
+
+.nav-links a:hover {
+  background-color: rgba(6, 68, 212, 0.219);
+  color: #fff;
+}
+
+/* only for contact button (last link on navbar)*/
+
+#contact-link  {
+  border: 2px solid var(--light-blue);
+} 
+
+#contact-link:hover {
+  background-color: #a1cbf6;
+  color: var(--prim-blue);
+}
+
+/* HERO SECTION (FIRST PAGE)*/
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80dvh;
+  color: var(--white);
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: clamp(2.4em, 8vw, 5rem);
+  text-align: center;
+}
+
+.hero-section p {
+  font-weight: 500;
+  font-size: clamp(1.3rem, 4vw, 2rem);
+  margin-bottom: 1.2rem;
+}
+
+.contin-btn {
+  padding: 0.5em 3em;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: 1px solid var(--light-blue);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.contin-btn:hover {
+  background-color: var(--light-blue);
+  color: var(--prim-blue);
+}
+
+/* ABOUT SECTION (SECOND SECTION/PAGE )*/
+
+.about-sect {
+  height: auto;
+  background-color: var(--white);
+  padding: 2em 5em;
+}
+
+.about-sect h1 {
+  font-size: clamp(2rem, 8vw, 3rem);
+  margin-bottom: 0.5em;
+}
+
+.about-sect p {
+  line-height: 1.5em;
+  font-size: clamp(0.2rem, 8vw, 1.2rem);
+}
+
+/* PROJECTS SECTION (THIRD PAGE/SECTION)*/
+
+.proj-section {
+  color: var(--white);
+  padding: 2em clamp(0.3em, 8vw, 4%);
+  height: auto;
+  border-top: 1px solid rgba(1, 61, 85, 0.205);
+  background-color: rgb(97, 171, 211);
+}
+
+.proj-section h1 {
+  color: var(--prim-blue-bg);
+  font-size: clamp(1em, 8vw, 2rem);
+  text-align: center;
+}
+
+.projects-sect {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+  padding-bottom: 3em;
+  margin-top: 2rem;
+}
+
+.card {
+  cursor: pointer;
+  width: 400px;
+  height: auto;
+  background-color: rgb(16, 16, 58);
+  color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  flex-grow: 0;
+}
+
+.card h3 {
+  font-size: clamp(1rem, 8vw, 1.5rem);
+  font-weight: 200;
+  margin-bottom: 1em;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+.card-details {
+  text-align: left;
+  padding: 1.3em 1.2em;
+  height: auto;
+}
+
+.card-options {
+  display: flex;
+  gap: 0.5em;
+}
+
+.card-options .btn {
+  padding: 0.3em 1em;
+  border-radius: 25px;
+  font-size: clamp(0.6rem, 8vw, 1.1rem);
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid lightblue;
+  color: lightblue;
+}
+
+.card-options .btn:hover {
+  background-color: lightblue;
+  color: rgb(16, 16, 58);
+}
+
+.card:hover {
+  background-color: rgb(8, 41, 113);
+  box-shadow: 5px 10px 35px rgba(16, 36, 58, 0.4);
+}
+
+.back-top-btn {
+  display: block;
+  color: var(--light-blue);
+  background-color: var(--prim-blue);
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-size: clamp(0.2rem, 8vw, 1.2rem);
+  cursor: pointer;
+  justify-self: center;
+}
+
+.back-top-btn:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 10px 25px rgba(7, 15, 24, 0.4);
+}
+
+/* Email form ****(MOVED TO SEPARATE PAGE)**** 
+
+
+
+*/
+
+/* FOOTER (WITH LINKS ONLY)*/
+
+.footer {
+  display: flex;
+  padding: 2em clamp(0.5rem, 8vw, 7%);
+  height: auto;
+  background-color: var(--prim-blue-bg);
+}
+
+.footer h5 {
+  color: var(--white);
+  font-size: 1rem;
+  opacity: 60%;
+  margin-top: 0.5em;
+}
+
+.scl-med {
+  padding: 0;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.scl-med a {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--white);
+  display: block;
+  margin: 0.1em 0;
+  opacity: 75%;
+}
+
+.scl-med a:hover {
+  color: #fff;
+  opacity: 100%;
+}
+
+.get-in-touch {
+  padding: 0.5em 1em;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  margin: 1em;
+  right: 0;
+  bottom: 0;
+  font-size: 1.2rem;
+  line-height: 1em;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 5px 5px 25px rgba(16, 36, 58, 0.4);
+  background-color: rgb(8, 41, 113);
+  color: white;
+  display: none;
+}
+
+.get-in-touch:hover {
+  box-shadow: 0px 0px 25px rgba(49, 114, 183, 0.422);
+  background-color: rgb(12, 61, 168);
+}
+
+/*  med */
+
+@media screen and (max-width: 600px) {
+  .material-symbols-outlined {
+    display: block;
+  }
+
+  .get-in-touch {
+    display: block;
+  }
+
+  nav, #navlinks {  box-shadow: 0px 10px 25px rgba(14, 26, 39, 0.422);}
+
+  nav {
+    top: 0;
+    position: fixed;
+    background-color: #051628d8;
+    backdrop-filter: blur(5px);
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    padding: 0 clamp(0.5em, 4vw, 19%);
+  }
+
+  #contact-link  {  /* this should only be visible on Desktop or screens larger than 600 pixels.*/
+  border: none;
+}
+
+  #Hamburg-menu {
+    font-size: 2.5rem;
+    line-height: 50px;
+    cursor: pointer;
+    height: 50px;
+  }
+
+  #Hamburg-menu:hover {
+    color: var(--light-blue);
+  }
+
+  .nav-links {
+    box-shadow: 0px 0px 25px rgba(11, 22, 35, 0.422);
+    background-color: rgba(1, 19, 35, 0.936);
+    position: absolute;
+    top: 50px;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 1em;
+    display: none;
+    left: 0;
+  }
+
+
+  .nav-links a,
+  #active {
+    background-color: transparent;
+    padding: 0 1em;
+    margin: 0;
+    border-radius: 0;
+    font-size: 1.7rem;
+    font-weight: 800;
+  }
+
+  .nav-links a:nth-child(-n + 3) {
+    border-bottom: 1px solid rgba(163, 218, 241, 0.349);
+  }
+
+  
+
+  /* this color is a bit lighter than the active id on link.*/
+
+  .nav-links a:hover {
+    background-color: rgba(40, 93, 239, 0.144);
+  }
+
+  /* hero section */
+
+  .hero-section {
+    padding-top: 30%;
+  }
+
+  /* about section */
+
+  .about-sect {
+    padding: clamp(1rem, 8vw, 7%);
+  }
+
+  /* CONTACT FORM ****(MOVED)**** 
+ 
+    */
+
+  /* projects*/
+  .projects-sect .card {
+    flex-grow: 1;
+  }
+}
+
+/* Larger screens */
+
+@media screen and (max-width: 1024px) {
+  .projects-sect .card {
+    flex-grow: 0;
+  }
+}
+
+/* ====================== FOR CONTACT FORM ======================================*/
+.contact-main {
+  background-image: url(./assets/bg-image/thumb-1920-1318499.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  background-attachment: fixed;
+  background-color: rgba(6, 16, 80, 0.491);
+}
+
+.contact-main button {
+  border-radius: 25px;
+}
+
+.contact-main {
+  height: 100dvh;
+  display: flex;
+  padding: 0em clamp(1em, 8vw, 10rem);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:  var(--light-blue);
+}
+
+.cont-txt-sect h3 {
+  text-align: center;
+  font-family: druk;
+  width: 100%;
+  font-size: clamp(1rem, 8vw, 2rem);
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+
+.contact-main h1 {
+  text-align: center;
+  font-size: clamp(2rem, 8vw, 2.5rem);
+  color: #a1cbf6;
+  width: 100%;
+}
+
+
+input,
+button {
+  border-radius: 5px;
+}
+
+form {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: .5em 2em;
+  gap: 16px;
+  height: auto;
+  width: 350px;
+}
+
+label {
+  text-align: left;
+  font-weight: 500;
+  color: var(--light-blue);
+  opacity: 80%;
+}
+
+input {
+  padding: 0.8em 0.5em;
+  border-radius: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #a1ccf670;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+
+
+input:focus-visible {
+  color: white;
+  border-bottom: 1px solid #1e80e1;
+}
+
+input:first-of-type {
+  margin-bottom: 1em;
+}
+
+.sub-btn {
+  font-weight: 600;
+  padding: 0.5em 1em;
+  border: 1px solid var(--light-blue);
+  font-size: 1.3rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: #a1cbf6;
+  margin-top: 1em;
+}
+
+.sub-btn {
+  position: relative;
+  bottom: -20px;
+}
+
+.sub-btn:hover {
+  background-color: #a1cbf6;
+  color: var(--prim-blue);
+  border-bottom: 1px solid #a1cbf6;
+}
+
+.bck-to-home button {
+  top: 5%;
+  left: 5%;
+  position: absolute;
+  width: fit-content;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  align-content: center;
+  text-align: center;
+  background-color: transparent;
+  color: #a1cbf6;
+  border: 1px solid #a1cbf6;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.bck-to-home button:hover {
+  color: var(--prim-blue);
+  background-color: #a1cbf6;
+}
+
+.email-msg {
+  animation: fadein 0.5s  0.2ms 1;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  width: 250px;
+  z-index: 1;
+  text-align: center;
+  margin-top: 1em ;
+  background-color: #0d71ce;
+  padding: 1.5em 2em;
+  border-radius: 10px;
+  display: none;
+}
+
+.txt {
+  font-weight: 500;
+}
+
+#Sucesstxt {
+  color: rgb(208, 219, 234);
+}
+
+#Errtxt {
+  color: rgb(255, 0, 8);
+}
+
+@keyframes fadein {
+  
+  0% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
