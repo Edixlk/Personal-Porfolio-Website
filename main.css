@@ -563,17 +563,11 @@ input:first-of-type {
 
 .email-msg {
   animation: fadein 0.5s  0.2ms 1;
-  position: absolute;
-  top: 3%;
-  right: 3%;
-  width: 250px;
   z-index: 1;
   text-align: center;
   margin-top: 1em ;
-  background-color: #0d71ce;
   padding: 1.5em 2em;
   border-radius: 10px;
-  display: none;
 }
 
 .txt {
@@ -588,17 +582,3 @@ input:first-of-type {
   color: rgb(255, 0, 8);
 }
 
-@keyframes fadein {
-  
-  0% {
-    opacity: 0%;
-  }
-
-  50% {
-    opacity: 50%;
-  }
-
-  100% {
-    opacity: 100%;
-  }
-}

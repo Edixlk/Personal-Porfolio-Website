@@ -28,7 +28,7 @@ function Sendmail() {
   const templateParams = {
     name: document.querySelector("#name").value,
     name: document.querySelector("#emailadr").value,
-    name: document.querySelector("#content-txt").value,
+   
   };
 
   PopupMsg.style.display = "block";
@@ -41,7 +41,7 @@ function Sendmail() {
     },
     (error) => {
       console.log("FAILED...", error);
-      Errortxt.innerHTML = "Sorry, Please try again."; // Error Message
+      Errortxt.innerHTML = "Sorry, Please try again or complete the form."; // Error Message
       Successtxt.style.display = "none";
     }
   );
