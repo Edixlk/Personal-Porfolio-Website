@@ -28,7 +28,7 @@ function Sendmail() {
   const templateParams = {
     name: document.querySelector("#name").value,
     name: document.querySelector("#emailadr").value,
-   
+     
   };
 
   PopupMsg.style.display = "block";

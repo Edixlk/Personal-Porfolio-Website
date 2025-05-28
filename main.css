@@ -98,9 +98,9 @@ nav {
 
 /* only for contact button (last link on navbar)*/
 
-#contact-link  {
+#contact-link {
   border: 2px solid var(--light-blue);
-} 
+}
 
 #contact-link:hover {
   background-color: #a1cbf6;
@@ -327,112 +327,11 @@ nav {
   background-color: rgb(12, 61, 168);
 }
 
-/*  med */
-
-@media screen and (max-width: 600px) {
-  .material-symbols-outlined {
-    display: block;
-  }
-
-  .get-in-touch {
-    display: block;
-  }
-
-  nav, #navlinks {  box-shadow: 0px 10px 25px rgba(14, 26, 39, 0.422);}
-
-  nav {
-    top: 0;
-    position: fixed;
-    background-color: #051628d8;
-    backdrop-filter: blur(5px);
-    height: 50px;
-    display: flex;
-    justify-content: left;
-    padding: 0 clamp(0.5em, 4vw, 19%);
-  }
-
-  #contact-link  {  /* this should only be visible on Desktop or screens larger than 600 pixels.*/
-  border: none;
-}
-
-  #Hamburg-menu {
-    font-size: 2.5rem;
-    line-height: 50px;
-    cursor: pointer;
-    height: 50px;
-  }
-
-  #Hamburg-menu:hover {
-    color: var(--light-blue);
-  }
-
-  .nav-links {
-    box-shadow: 0px 0px 25px rgba(11, 22, 35, 0.422);
-    background-color: rgba(1, 19, 35, 0.936);
-    position: absolute;
-    top: 50px;
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 1em;
-    display: none;
-    left: 0;
-  }
-
-
-  .nav-links a,
-  #active {
-    background-color: transparent;
-    padding: 0 1em;
-    margin: 0;
-    border-radius: 0;
-    font-size: 1.7rem;
-    font-weight: 800;
-  }
-
-  .nav-links a:nth-child(-n + 3) {
-    border-bottom: 1px solid rgba(163, 218, 241, 0.349);
-  }
-
-  
-
-  /* this color is a bit lighter than the active id on link.*/
-
-  .nav-links a:hover {
-    background-color: rgba(40, 93, 239, 0.144);
-  }
-
-  /* hero section */
-
-  .hero-section {
-    padding-top: 30%;
-  }
-
-  /* about section */
-
-  .about-sect {
-    padding: clamp(1rem, 8vw, 7%);
-  }
-
-  /* CONTACT FORM ****(MOVED)**** 
- 
-    */
-
-  /* projects*/
-  .projects-sect .card {
-    flex-grow: 1;
-  }
-}
-
-/* Larger screens */
-
-@media screen and (max-width: 1024px) {
-  .projects-sect .card {
-    flex-grow: 0;
-  }
-}
 
 /* ====================== FOR CONTACT FORM ======================================*/
-.contact-main {
+
+
+body {
   background-image: url(./assets/bg-image/thumb-1920-1318499.jpeg);
   background-repeat: no-repeat;
   background-position: center;
@@ -440,6 +339,11 @@ nav {
   background-blend-mode: color-dodge;
   background-attachment: fixed;
   background-color: rgba(6, 16, 80, 0.491);
+  height: auto;
+}
+
+.contact-main {
+  margin-top: 3%;
 }
 
 .contact-main button {
@@ -448,12 +352,11 @@ nav {
 
 .contact-main {
   height: 100dvh;
-  display: flex;
-  padding: 0em clamp(1em, 8vw, 10rem);
-  justify-content: center;
-  align-items: center;
+  display: grid;
+
+  place-content: center;
   flex-direction: column;
-  color:  var(--light-blue);
+  color: var(--light-blue);
 }
 
 .cont-txt-sect h3 {
@@ -482,7 +385,7 @@ form {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-self: center;
   padding: .5em 2em;
   gap: 16px;
   height: auto;
@@ -542,19 +445,21 @@ input:first-of-type {
 .bck-to-home button {
   top: 5%;
   left: 5%;
-  position: absolute;
+  position: fixed;
   width: fit-content;
   padding: 0.5em 1em;
-  font-size: 1rem;
+  font-size: 1.3rem;
   align-content: center;
   text-align: center;
   background-color: transparent;
   color: #a1cbf6;
-  border: 1px solid #a1cbf6;
+  border: 2px solid #a1cbf6;
   font-weight: 600;
   cursor: pointer;
   border-radius: 25px;
+  justify-items: center;
 }
+
 
 .bck-to-home button:hover {
   color: var(--prim-blue);
@@ -562,10 +467,10 @@ input:first-of-type {
 }
 
 .email-msg {
-  animation: fadein 0.5s  0.2ms 1;
+  animation: fadein 0.5s 0.2ms 1;
   z-index: 1;
   text-align: center;
-  margin-top: 1em ;
+  margin-top: 1em;
   padding: 1.5em 2em;
   border-radius: 10px;
 }
@@ -580,5 +485,120 @@ input:first-of-type {
 
 #Errtxt {
   color: rgb(255, 0, 8);
+}
+
+/*  med */
+
+@media screen and (max-width: 600px) {
+  .material-symbols-outlined {
+    display: block;
+  }
+
+  .get-in-touch {
+    display: block;
+  }
+
+  nav,
+  #navlinks {
+    box-shadow: 0px 10px 25px rgba(14, 26, 39, 0.422);
+  }
+
+  nav {
+    top: 0;
+    position: fixed;
+    background-color: #051628d8;
+    backdrop-filter: blur(5px);
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    padding: 0 clamp(0.5em, 4vw, 19%);
+  }
+
+  #contact-link {
+    /* this should only be visible on Desktop or screens larger than 600 pixels.*/
+    border: none;
+  }
+
+  #Hamburg-menu {
+    font-size: 2.5rem;
+    line-height: 50px;
+    cursor: pointer;
+    height: 50px;
+  }
+
+  #Hamburg-menu:hover {
+    color: var(--light-blue);
+  }
+
+  .nav-links {
+    box-shadow: 0px 0px 25px rgba(11, 22, 35, 0.422);
+    background-color: rgba(1, 19, 35, 0.936);
+    position: absolute;
+    top: 50px;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 1em;
+    display: none;
+    left: 0;
+  }
+
+
+  .nav-links a,
+  #active {
+    background-color: transparent;
+    padding: 0 1em;
+    margin: 0;
+    border-radius: 0;
+    font-size: 1.7rem;
+    font-weight: 800;
+  }
+
+  .nav-links a:nth-child(-n + 3) {
+    border-bottom: 1px solid rgba(163, 218, 241, 0.349);
+  }
+
+
+
+  /* this color is a bit lighter than the active id on link.*/
+
+  .nav-links a:hover {
+    background-color: rgba(40, 93, 239, 0.144);
+  }
+
+  /* hero section */
+
+  .hero-section {
+    padding-top: 30%;
+  }
+
+  /* about section */
+
+  .about-sect {
+    padding: clamp(1rem, 8vw, 7%);
+  }
+
+  /* CONTACT FORM ****(MOVED)**** */
+
+  .bck-to-home button {
+    top: 2%;
+    left: 2%;
+  }
+
+
+
+  /* projects*/
+  .projects-sect .card {
+    flex-grow: 1;
+  }
+
+
+}
+
+/* Larger screens */
+
+@media screen and (max-width: 1024px) {
+  .projects-sect .card {
+    flex-grow: 0;
+  }
 }
 
