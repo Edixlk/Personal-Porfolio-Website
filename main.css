@@ -270,28 +270,34 @@ nav {
 
 .footer {
   display: flex;
-  padding: 2em clamp(0.5rem, 8vw, 7%);
+  padding: 1em clamp(.5em, 8vw, 2em);
   height: auto;
+  width: 100%;
+  right: 0;
   background-color: var(--prim-blue-bg);
 }
 
-.footer h5 {
+.footer h1 {
   color: var(--white);
-  font-size: 1rem;
-  opacity: 60%;
+  font-size: clamp(.3rem,8vw,1.2rem);
+  margin-bottom: .8em ;
+  padding: .5em 0;
+  border-bottom: 1px solid  rgba(126, 192, 249, 0.393);
   margin-top: 0.5em;
+  letter-spacing: 1px;
 }
+
 
 .scl-med {
   padding: 0;
-  width: fit-content;
+   width: 100%;
   display: flex;
   flex-direction: column;
   align-self: center;
 }
 
 .scl-med a {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: var(--white);
   display: block;
@@ -486,6 +492,8 @@ input:first-of-type {
 #Errtxt {
   color: rgb(255, 0, 8);
 }
+
+
 
 /*  med */
 
