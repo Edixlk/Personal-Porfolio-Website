@@ -67,3 +67,10 @@
 - The "Get in touch button" is only visible on smaller screens with the mobile navbar. This was done to avoid confusion on Desktop view.
 
 - Fixed mobile/devices with smaller screens. It would remain visible when scrolling.
+
+
+## 5.29.25
+
+- Minor fixes to navigation bar (mobile) and "get in touch" button.
+
+- Contact button on footer (For larger screens on desktop)

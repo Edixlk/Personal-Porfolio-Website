@@ -99,7 +99,7 @@ nav {
 /* only for contact button (last link on navbar)*/
 
 #contact-link {
-  border: 2px solid var(--light-blue);
+  border: 1px solid var(--light-blue);
 }
 
 #contact-link:hover {
@@ -270,18 +270,19 @@ nav {
 
 .footer {
   display: flex;
-  padding: 1em clamp(.5em, 8vw, 2em);
+  padding: 2em clamp(1em, 8vw, 4em);
   height: auto;
   width: 100%;
   right: 0;
-  background-color: var(--prim-blue-bg);
+  background-color: rgba(4, 54, 111, 0.452);
+  background-blend-mode: darken;
 }
 
 .footer h1 {
   color: var(--white);
-  font-size: clamp(.3rem,8vw,1.2rem);
-  margin-bottom: .8em ;
-  padding: .5em 0;
+  font-size: clamp(.5rem,8vw, 1.4rem);
+  margin-bottom: .5em ;
+  padding: .3em 0;
   border-bottom: 1px solid  rgba(126, 192, 249, 0.393);
   margin-top: 0.5em;
   letter-spacing: 1px;
@@ -290,14 +291,14 @@ nav {
 
 .scl-med {
   padding: 0;
-   width: 100%;
+   width: fit-content;
   display: flex;
   flex-direction: column;
   align-self: center;
 }
 
 .scl-med a {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 900;
   color: var(--white);
   display: block;
@@ -310,20 +311,27 @@ nav {
   opacity: 100%;
 }
 
+
+#contact-foot-link {  /* this should only be visible on desktop or larger */
+  color: #00b3ff;
+}
+
 .get-in-touch {
   padding: 0.5em 1em;
   position: fixed;
-  width: 100px;
-  height: 100px;
-  margin: 1em;
+  width: 80px;
+  height: 80px;
+  margin: 1em .5em ;
   right: 0;
   bottom: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1em;
   border-radius: 50%;
+  border: 2px solid #00b3ff;
+  z-index: 1;
   cursor: pointer;
-  box-shadow: 5px 5px 25px rgba(16, 36, 58, 0.4);
-  background-color: rgb(8, 41, 113);
+  box-shadow: 5px 5px 25px rgba(16, 36, 58, 0.635);
+  background-color: rgba(8, 41, 113, 0.639);
   color: white;
   display: none;
 }
@@ -331,6 +339,7 @@ nav {
 .get-in-touch:hover {
   box-shadow: 0px 0px 25px rgba(49, 114, 183, 0.422);
   background-color: rgb(12, 61, 168);
+  border: transparent;
 }
 
 
@@ -459,7 +468,7 @@ input:first-of-type {
   text-align: center;
   background-color: transparent;
   color: #a1cbf6;
-  border: 2px solid #a1cbf6;
+  border: 1px solid #a1cbf6;
   font-weight: 600;
   cursor: pointer;
   border-radius: 25px;
@@ -514,7 +523,7 @@ input:first-of-type {
   nav {
     top: 0;
     position: fixed;
-    background-color: #051628d8;
+    background-color: #011e3d9c;
     backdrop-filter: blur(5px);
     height: 50px;
     display: flex;
@@ -540,21 +549,24 @@ input:first-of-type {
 
   .nav-links {
     box-shadow: 0px 0px 25px rgba(11, 22, 35, 0.422);
-    background-color: rgba(1, 19, 35, 0.936);
+    background-color: rgb(1, 19, 35);
     position: absolute;
     top: 50px;
     flex-direction: column;
     width: 100%;
-    padding-bottom: 1em;
     display: none;
     left: 0;
+  }
+
+  .nav-links a {
+    font-family: druk;
   }
 
 
   .nav-links a,
   #active {
     background-color: transparent;
-    padding: 0 1em;
+    padding: 0 .5em;
     margin: 0;
     border-radius: 0;
     font-size: 1.7rem;
@@ -570,7 +582,7 @@ input:first-of-type {
   /* this color is a bit lighter than the active id on link.*/
 
   .nav-links a:hover {
-    background-color: rgba(40, 93, 239, 0.144);
+    background-color: rgba(16, 99, 233, 0.925);
   }
 
   /* hero section */
@@ -599,6 +611,12 @@ input:first-of-type {
     flex-grow: 1;
   }
 
+
+  /* footer */
+
+  #contact-foot-link {
+  display: none;
+}
 
 }
 
