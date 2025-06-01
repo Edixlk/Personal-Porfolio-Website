@@ -515,20 +515,13 @@ input:first-of-type {
     display: block;
   }
 
-  nav,
-  #navlinks {
-    box-shadow: 0px 10px 25px rgba(14, 26, 39, 0.422);
-  }
-
   nav {
     top: 0;
     position: fixed;
-    background-color: #011e3d9c;
-    backdrop-filter: blur(5px);
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: left;
-    padding: 0 clamp(0.5em, 4vw, 19%);
+    padding: 0 clamp(0.2em, 4vw, 19%);
   }
 
   #contact-link {
@@ -537,10 +530,17 @@ input:first-of-type {
   }
 
   #Hamburg-menu {
-    font-size: 2.5rem;
-    line-height: 50px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    line-height: 40px;
     cursor: pointer;
-    height: 50px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(3, 82, 173);
+    border-radius: 25px;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0px 10px 25px rgba(2, 13, 27, 0.47);
   }
 
   #Hamburg-menu:hover {
@@ -548,15 +548,18 @@ input:first-of-type {
   }
 
   .nav-links {
-    box-shadow: 0px 0px 25px rgba(11, 22, 35, 0.422);
+    box-shadow: 0px 0px 15px rgba(11, 22, 35, 0.422);
     background-color: rgb(1, 19, 35);
     position: absolute;
-    top: 50px;
+    top: 65px;
     flex-direction: column;
     width: 100%;
     display: none;
     left: 0;
+    overflow: hidden;
   }
+
+  
 
   .nav-links a {
     font-family: druk;

@@ -1,18 +1,24 @@
 
-// ***FOR dev BRANCH***
+// ***FOR main BRANCH***
 
 
 // FOR MOBILE NAVBAR
+
+let contactHovr = document.getElementById("contact-flt-btn");
 
 let MenuBtn = document.getElementById("Hamburg-menu");
 
 function Open() {
   let NavigLinks = document.getElementById("navlinks");
 
+  contactHovr.style.display = "none";
+
   if (NavigLinks.style.display == "flex") {
     NavigLinks.style.display = "none";
+    contactHovr.style.display = "block";
   } else {
     NavigLinks.style.display = "flex";
+    contactHovr.style.display = "none";
   }
 }
 
