@@ -36,7 +36,6 @@
 - Make first three sections responsive on mobile.
 - Mobile navbar added (see screenshot below)
 
-![Mobile nav bar ](/assets/images/Screenshot.png)
 
 ## 5.20.25
 
