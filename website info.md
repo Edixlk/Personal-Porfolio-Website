@@ -8,7 +8,8 @@ No info as yet.
 - HTML
 - CSS
 - A bit of Java script
-## hobbies
+
+## hobbies  **SCAPPED**
 
 - Photography
 - Video editing 

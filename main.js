@@ -37,8 +37,6 @@ function Sendmail() {
      
   };
 
-  PopupMsg.style.display = "block";
-
   emailjs.send("service_eojdgfk", "template_xoc6n7p", templateParams).then(
     (response) => {
       console.log("SUCCESS!", response.status, response.text);

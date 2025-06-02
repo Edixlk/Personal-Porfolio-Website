@@ -491,6 +491,7 @@ input:first-of-type {
 }
 
 .txt {
+  display: block;
   font-weight: 500;
 }
 
