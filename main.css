@@ -280,10 +280,10 @@ nav {
 
 .footer h1 {
   color: var(--white);
-  font-size: clamp(.5rem,8vw, 1.4rem);
-  margin-bottom: .5em ;
+  font-size: clamp(.5rem, 8vw, 1.4rem);
+  margin-bottom: .5em;
   padding: .3em 0;
-  border-bottom: 1px solid  rgba(126, 192, 249, 0.393);
+  border-bottom: 1px solid rgba(126, 192, 249, 0.393);
   margin-top: 0.5em;
   letter-spacing: 1px;
 }
@@ -291,7 +291,7 @@ nav {
 
 .scl-med {
   padding: 0;
-   width: fit-content;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -312,7 +312,8 @@ nav {
 }
 
 
-#contact-foot-link {  /* this should only be visible on desktop or larger */
+#contact-foot-link {
+  /* this should only be visible on desktop or larger */
   color: #00b3ff;
 }
 
@@ -321,7 +322,7 @@ nav {
   position: fixed;
   width: 80px;
   height: 80px;
-  margin: 1em .5em ;
+  margin: 1em .5em;
   right: 0;
   bottom: 0;
   font-size: 1rem;
@@ -519,21 +520,22 @@ input:first-of-type {
   nav {
     top: 0;
     position: fixed;
-    height: 40px;
+    height: 50px;
     display: flex;
-    justify-content: left;
+    justify-content: right;
     padding: 0 clamp(0.2em, 4vw, 19%);
   }
 
   #contact-link {
     /* this should only be visible on Desktop or screens larger than 600 pixels.*/
     border: none;
+    color: rgb(38, 96, 254);
   }
 
   #Hamburg-menu {
     margin-top: 10px;
     font-size: 1.5rem;
-    line-height: 40px;
+    line-height: 20px;
     cursor: pointer;
     height: 40px;
     width: 40px;
@@ -541,8 +543,9 @@ input:first-of-type {
     border-radius: 25px;
     text-align: center;
     align-content: center;
-    box-shadow: 0px 10px 25px rgba(2, 13, 27, 0.47);
   }
+
+  
 
   #Hamburg-menu:hover {
     color: var(--light-blue);
@@ -552,15 +555,15 @@ input:first-of-type {
     box-shadow: 0px 0px 15px rgba(11, 22, 35, 0.422);
     background-color: rgb(1, 19, 35);
     position: absolute;
-    top: 65px;
+    top: 60px;
+    right: 20px;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     display: none;
-    left: 0;
     overflow: hidden;
+    border-radius: 10px;
   }
 
-  
 
   .nav-links a {
     font-family: druk;
@@ -570,11 +573,13 @@ input:first-of-type {
   .nav-links a,
   #active {
     background-color: transparent;
-    padding: 0 .5em;
+    height: 50px;
     margin: 0;
+    line-height: 42px;
     border-radius: 0;
-    font-size: 1.7rem;
+    font-size: 1rem;
     font-weight: 800;
+    text-align: center;
   }
 
   .nav-links a:nth-child(-n + 3) {
@@ -619,8 +624,8 @@ input:first-of-type {
   /* footer */
 
   #contact-foot-link {
-  display: none;
-}
+    display: none;
+  }
 
 }
 
@@ -631,4 +636,3 @@ input:first-of-type {
     flex-grow: 0;
   }
 }
-
