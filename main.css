@@ -270,7 +270,7 @@ nav {
 
 .footer {
   display: flex;
-  padding: 2em clamp(1em, 8vw, 4em);
+  padding: 2em clamp(.5em, 8vw, 4em);
   height: auto;
   width: 100%;
   right: 0;
@@ -295,6 +295,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-self: center;
+  gap: 1px;
 }
 
 .scl-med a {
@@ -302,8 +303,8 @@ nav {
   font-weight: 900;
   color: var(--white);
   display: block;
-  margin: 0.1em 0;
   opacity: 75%;
+  width: fit-content;
 }
 
 .scl-med a:hover {
