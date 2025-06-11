@@ -355,13 +355,11 @@ body {
   background-size: cover;
   background-blend-mode: color-dodge;
   background-attachment: fixed;
-  background-color: rgba(6, 16, 80, 0.491);
+  background-color: var(--prim-blue-bg);
+  height: 100dvh;
   height: auto;
 }
 
-.contact-main {
-  margin-top: 3%;
-}
 
 .contact-main button {
   border-radius: 25px;
@@ -460,11 +458,11 @@ input:first-of-type {
 }
 
 .bck-to-home button {
-  top: 5%;
-  left: 5%;
   position: fixed;
+  top: 5%;
+  left: 2%;
+  padding: 0.5em;
   width: fit-content;
-  padding: 0.5em 1em;
   font-size: 1.3rem;
   align-content: center;
   text-align: center;
@@ -504,7 +502,11 @@ input:first-of-type {
 #Errtxt {
   color: rgb(255, 0, 8);
 }
+ 
 
+* {
+  border: 1px solid red;
+}
 
 
 /*  med */
