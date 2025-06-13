@@ -31,7 +31,7 @@ html {
   outline: none;
   text-decoration: none;
   font-family: font1;
-  transition: 0.3s;
+
 }
 
 ::-webkit-scrollbar {
@@ -69,7 +69,7 @@ header {
   background-blend-mode: color-dodge;
   background-attachment: fixed;
   background-color: var(--prim-blue-bg);
-  height: 100dvh;
+  height: 100svh;
 }
 
 /* NAVBAR*/
@@ -114,7 +114,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80dvh;
+  height: 80svh;
   color: var(--white);
   text-align: center;
 }
@@ -131,13 +131,17 @@ nav {
 }
 
 .contin-btn {
-  padding: 0.5em 3em;
-  border-radius: 25px;
-  font-size: 1.3rem;
+  width: 80px;
+  height: 80px;
+  line-height: normal;
+  border-radius: 100%;
+  font-size: clamp(2rem,8vw,3.2em);
   background-color: transparent;
   border: 1px solid var(--light-blue);
   color: var(--white);
   cursor: pointer;
+  align-content: center;
+  margin-top: .5em;
 }
 
 .contin-btn:hover {
@@ -223,7 +227,7 @@ nav {
 }
 
 .card-options .btn {
-  padding: 0.3em 1em;
+  padding: 0.3em .8em;
   border-radius: 25px;
   font-size: clamp(0.6rem, 8vw, 1.1rem);
   font-weight: 600;
@@ -231,6 +235,12 @@ nav {
   background-color: transparent;
   border: 1px solid lightblue;
   color: lightblue;
+}
+
+
+.btn span {
+  margin-right: 5px;
+  fill: currentColor;
 }
 
 .card-options .btn:hover {
