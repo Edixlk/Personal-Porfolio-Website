@@ -131,11 +131,10 @@ nav {
 }
 
 .contin-btn {
-  width: 80px;
-  height: 80px;
+  padding: .3em 2em;
   line-height: normal;
-  border-radius: 100%;
-  font-size: clamp(2rem,8vw,3.2em);
+  border-radius: 30px;
+  font-size: clamp(1rem, 8vw, 2em);
   background-color: transparent;
   border: 1px solid var(--light-blue);
   color: var(--white);
@@ -274,7 +273,7 @@ nav {
 
 
 
-*/
+
 
 /* FOOTER (WITH LINKS ONLY)*/
 
@@ -512,11 +511,7 @@ input:first-of-type {
 #Errtxt {
   color: rgb(255, 0, 8);
 }
- 
 
-* {
-  border: 1px solid red;
-}
 
 
 /*  med */
@@ -558,7 +553,7 @@ input:first-of-type {
     align-content: center;
   }
 
-  
+
 
   #Hamburg-menu:hover {
     color: var(--light-blue);
