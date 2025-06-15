@@ -2,211 +2,283 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!--temp sytlesheet-->
 
-    <!--Google fonts (icons)-->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
-    />
+<head>
+  <!--temp sytlesheet-->
 
-    <!--fontawsome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!--Google fonts (icons)-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+
+  <!--fontawsome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Remixicon (TESTING) -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link
-      rel="shortcut icon"
-      href="./assets/icons/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="main.css" />
-    
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edixlk - Portfolio</title>
-  </head>
-  <body>
-    <!--About Section-->
-    <header role="banner" id="home">
+  <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="main.css" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edixlk - Portfolio</title>
+</head>
+
+<body>
+  <!--About Section-->
+  <header role="banner" id="home">
 
 
-      <!-- visible on smaller screens-->
-      <a href="contact.html">
-           <button class="get-in-touch" id="contact-flt-btn">Get in touch?</button>
+    <!-- visible on smaller screens-->
+    <a href="contact.html">
+      <button class="get-in-touch" id="contact-flt-btn">Get in touch?</button>
+    </a>
+
+
+
+    <!--Navbar-->
+    <nav role="navigation">
+      <span class="material-symbols-outlined" id="Hamburg-menu" class="menu-btn" onclick="Open()">
+        menu
+      </span>
+
+      <ul class="nav-links" id="navlinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="contact.html" id="contact-link">Contact</a>
+      </ul>
+    </nav>
+
+    <!--first section of page -->
+    <section class="hero-section">
+      <h1>Hello there</h1>
+      <p>Welcome to my portfolio.</p>
+
+      <a href="#about">
+        <button class="contin-btn">Continue</button>
       </a>
 
-     
+    </section>
+  </header>
 
-      <!--Navbar-->
-      <nav role="navigation">
-        <span
-          class="material-symbols-outlined"
-          id="Hamburg-menu"
-          class="menu-btn"
-         onclick="Open()">
-          menu
-        </span>
+  <main role="main">
+    <!---About Section-->
+    <section id="about" class="about-sect">
+      <h1>About me</h1>
 
-        <ul class="nav-links" id="navlinks">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="contact.html" id="contact-link">Contact</a>
-        </ul>
-      </nav>
+      <p>
+        My name is josh and I live in the Caribbean. First stumbled upon web
+        development back in 2022 and HTML was the very first thing I came
+        across (out of boredom). My passion grew for web development when my
+        group won for the best looking website for a Easter hackathon (I know
+        it's not actual hacking). Fast forward to a year or two later, I've
+        been <em><b>slowly</b></em> making progress on mastering CSS, JavaScript and a bit more of HTML.
+        Despite having very little time and living in a not so good
+        environment, I still make attempts to keep myself together and
+        continue learning mostly the frontend side of things in web
+        development.
 
-      <!--first section of page -->
-      <section class="hero-section">
-        <h1>Hello there</h1>
-        <p>Welcome to my portfolio.</p>
+        <q style="color: rgb(0, 110, 255); font-weight: bolder">Slow progress is better than no progress.</q>
+      </p>
 
-     <a href="#about">
-       <button class="contin-btn">Continue</button>
-     </a>
-       
-      </section>
-    </header>
+      <p style="margin-top: 1em">
+        My Goal is to create simple, fully functional and visually pleasing
+        websites at a affordable or reasonable price, nothing too complicated.
+      </p>
 
-    <main role="main">
-      <!---About Section-->
-      <section id="about" class="about-sect">
-        <h1>About me</h1>
+    </section>
 
-        <p>
-          My name is josh and I live in the Caribbean. First stumbled upon web
-          development back in 2022 and HTML was the very first thing I came
-          across (out of boredom). My passion grew for web development when my
-          group won for the best looking website for a Easter hackathon (I know
-          it's not actual hacking). Fast forward to a year or two later, I've
-          been <em><b>slowly</b></em
-          > making progress on mastering CSS, JavaScript and a bit more of HTML.
-          Despite having very little time and living in a not so good
-          environment, I still make attempts to keep myself together and
-          continue learning mostly the frontend side of things in web
-          development.
+    <!-- SKILLS, TECH STACK SECTION (added on 6.14.25)-->
 
-          <q style="color: rgb(0, 110, 255); font-weight: bolder"
-            >Slow progress is better than no progress.</q
-          >
-        </p>
+    <section class="skills-section" id="skills">
+      <h2>Tech stack / Skills</h2>
 
-        <p style="margin-top: 1em">
-          My Goal is to create simple, fully functional and visually pleasing
-          websites at a affordable or reasonable price, nothing too complicated.
-        </p>
+      <div class="tech-stack">
 
-      </section>
+        <div class="item  htm">
 
-      <section class="proj-section" id="projects">
-        <h1>My Projects</h1>
+          <img src="./assets/icons/html-5-svgrepo-com.svg" alt="html-logo" srcset="">
 
-        <div class="projects-sect">
-          <article class="card">
-            <div class="card-image">
-              <img src="./assets/images/1.png" alt="Project#1" />
-            </div>
-            <div class="card-details">
-              <h3>Blog preview page</h3>
-              <div class="card-options">
-                <a href="https://blog-preview-card-main-rho-one.vercel.app/">
-                  <button class="live btn"><span><i class="ri-link-m"></i></span>Live Site</button>
-                </a>
+          <div class="item-txt-inf">
 
-                <a href="https://github.com/Edixlk/blog-preview-card-main">
-                  <button class="source btn"><span><i class="ri-code-block"></i></span>Source Code</button>
-                </a>
-              </div>
-            </div>
-          </article>
+            <h5>HTML</h5>
+            <P>For building the foundation for the website.</P>
 
-          <article class="card">
-            <div class="card-image">
-              <img src="./assets/images/2.png" alt="Project#1" />
-            </div>
-            <div class="card-details">
-              <h3>QR code component</h3>
-              <div class="card-options">
-                <a href="https://qr-code-component-six-inky.vercel.app/">
-                  <button class="live btn">Live Site</button>
-                </a>
-
-                <a href="https://github.com/Edixlk/qr-code-component">
-                  <button class="source btn">Source Code</button>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-image">
-              <img src="./assets/images/3.png" alt="Project#1" />
-            </div>
-            <div class="card-details">
-              <h3>Personal Portfolio Website</h3>
-              <div class="card-options">
-                <a href="https://personal-porfolio-website-coral.vercel.app/">
-                  <button class="live btn">Live Site</button>
-                </a>
-
-                <a href="https://github.com/Edixlk/Personal-Porfolio-Website">
-                  <button class="source btn">Source Code</button>
-                </a>
-              </div>
-            </div>
-          </article>
-
-
-          <article class="card">
-            <div class="card-image">
-              <img src="./assets/images/4.png" alt="Project#1" />
-            </div>
-            <div class="card-details">
-              <h3>Recipe Page</h3>
-              <div class="card-options">
-                <a href="https://recipe-page-main-flame.vercel.app/">
-                  <button class="live btn">Live Site</button>
-                </a>
-
-                <a href="https://github.com/Edixlk/recipe-page-main">
-                  <button class="source btn">Source Code</button>
-                </a>
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
 
-        <a  href="#home">
-          <button class="back-top-btn">Back to top</button>
-        </a>  <!-- leads back to the top of the page-->
-      </section>
+        <div class="item  htm">
+
+          <img src="./assets/icons/css-3-svgrepo-com.svg" alt="css-logo" srcset="">
+
+          <div class="item-txt-inf">
+
+            <h5>CSS</h5>
+            <P>For Styling and laying out the website.</P>
+
+          </div>
+        </div>
+
+        <div class="item  htm">
+
+          <img src="./assets/icons/js-official-svgrepo-com.svg" alt="js-logo" srcset="">
+
+          <div class="item-txt-inf">
+
+            <h5>Javascript</h5>
+            <P>For website functionality.</P>
+
+          </div>
+        </div>
+
+        <div class="item  htm">
+
+          <img src="./assets/icons/git-svgrepo-com.svg" alt="git-logo" srcset="">
+
+          <div class="item-txt-inf">
+
+            <h5>Git</h5>
+            <P>For remotely storing projects (repositories).</P>
+
+          </div>
+        </div>
+
+        <div class="item  htm">
+
+          <img src="./assets/icons/vs-code-svgrepo-com.svg" alt="vsc-logo" srcset="">
+
+          <div class="item-txt-inf">
+
+            <h5>Visual Studio Code</h5>
+            <P>Code editor, mostly web development.</P>
+
+          </div>
+        </div>
+
+        <div class="item  htm">
+
+          <img src="./assets/icons/vercel-icon-svgrepo-com.svg" alt="vercel-logo" srcset="">
+
+          <div class="item-txt-inf">
+
+            <h5>Vercel</h5>
+            <P>Basic Website hosting.</P>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="proj-section" id="projects">
+      <h1>My Projects</h1>
+
+      <div class="projects-sect">
+        <article class="card">
+          <div class="card-image">
+            <img src="./assets/images/1.png" alt="Project#1" />
+          </div>
+          <div class="card-details">
+            <h3>Blog preview page</h3>
+            <div class="card-options">
+              <a href="https://blog-preview-card-main-rho-one.vercel.app/">
+                <button class="live btn"><span><i class="ri-link-m"></i></span>Live Site</button>
+              </a>
+
+              <a href="https://github.com/Edixlk/blog-preview-card-main">
+                <button class="source btn"><span><i class="ri-code-block"></i></span>Source Code</button>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="./assets/images/2.png" alt="Project#1" />
+          </div>
+          <div class="card-details">
+            <h3>QR code component</h3>
+            <div class="card-options">
+              <a href="https://qr-code-component-six-inky.vercel.app/">
+                <button class="live btn">Live Site</button>
+              </a>
+
+              <a href="https://github.com/Edixlk/qr-code-component">
+                <button class="source btn">Source Code</button>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image">
+            <img src="./assets/images/3.png" alt="Project#1" />
+          </div>
+          <div class="card-details">
+            <h3>Personal Portfolio Website</h3>
+            <div class="card-options">
+              <a href="https://personal-porfolio-website-coral.vercel.app/">
+                <button class="live btn">Live Site</button>
+              </a>
+
+              <a href="https://github.com/Edixlk/Personal-Porfolio-Website">
+                <button class="source btn">Source Code</button>
+              </a>
+            </div>
+          </div>
+        </article>
 
 
-     
-  
+        <article class="card">
+          <div class="card-image">
+            <img src="./assets/images/4.png" alt="Project#1" />
+          </div>
+          <div class="card-details">
+            <h3>Recipe Page</h3>
+            <div class="card-options">
+              <a href="https://recipe-page-main-flame.vercel.app/">
+                <button class="live btn">Live Site</button>
+              </a>
 
-      <!--  **** CONTACT SECTION IS ON A SEPARATE PAGE AS OF 5.25.25 *** -->
+              <a href="https://github.com/Edixlk/recipe-page-main">
+                <button class="source btn">Source Code</button>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
 
-      <!--FOOTER -->
+      <a href="#home">
+        <button class="back-top-btn">Back to top</button>
+      </a> <!-- leads back to the top of the page-->
+    </section>
+
+
+
+
+
+    <!--  **** CONTACT SECTION IS ON A SEPARATE PAGE AS OF 5.25.25 *** -->
+
+    <!--FOOTER -->
 
     <footer class="footer" role="contentinfo">
       <ul class="scl-med footerlinks">
         <h1>Made by @edixlk</h1>
-        <a href="contact.html" id="contact-foot-link">Contact Me</a> <!--Link only visible on this page and desktop only.-->
+        <a href="contact.html" id="contact-foot-link">Contact Me</a>
+        <!--Link only visible on this page and desktop only.-->
         <a href="https://x.com/nixc67">Twitter (X)</a>
         <a href="https://github.com/Edixlk">Github Page </a>
         <a href="https://www.youtube.com/@edixlk3">Youtube Channel</a>
       </ul>
     </footer>
-  </body>
-  <script src="main.js"></script>
+</body>
+<script src="main.js"></script>
+
 </html>
