@@ -134,9 +134,9 @@ nav {
   padding: .3em 2em;
   line-height: normal;
   border-radius: 30px;
-  font-size: clamp(1rem, 8vw, 2em);
+  font-size: clamp( 1rem, 8vw, 1.5em);
   background-color: transparent;
-  border: 1px solid var(--light-blue);
+  border: 2px solid var(--light-blue);
   color: var(--white);
   cursor: pointer;
   align-content: center;
