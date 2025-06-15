@@ -663,7 +663,7 @@ input:first-of-type {
     text-align: center;
   }
 
-  .nav-links a:nth-child(-n + 3) {
+  .nav-links a:nth-child(-n + 4) {
     border-bottom: 1px solid rgba(163, 218, 241, 0.349);
   }
 
