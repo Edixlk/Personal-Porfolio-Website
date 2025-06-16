@@ -31,7 +31,7 @@ html {
   outline: none;
   text-decoration: none;
   font-family: font1;
-   transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 section {
@@ -118,20 +118,19 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80svh;
+  height: 80dvh;
   color: var(--white);
   text-align: center;
 }
 
 .hero-section h1 {
-  font-size: clamp(2em, 8vw, 5rem);
+  font-size: clamp(2.3em, 8vw, 5rem);
   text-align: center;
 }
 
 .hero-section p {
-  font-weight: 500;
-  font-size: clamp(1rem, 4vw, 2rem);
-  margin-bottom: 1.2rem;
+  font-weight: 300;
+  font-size: clamp(1.3rem, 4vw, 2.3rem);
 }
 
 .contin-btn {
@@ -144,7 +143,7 @@ nav {
   color: var(--white);
   cursor: pointer;
   align-content: center;
-  margin-top: .5em;
+  margin-top: 1em;
 }
 
 .contin-btn:hover {
@@ -175,7 +174,7 @@ nav {
 .skills-section {
   background-color: rgba(0, 170, 255, 0.096);
   background-blend-mode: color-burn;
-  height:  auto;
+  height: auto;
   gap: 2em;
   padding: 5em clamp(.3rem, 7vw, 10em);
   justify-content: center;
@@ -264,9 +263,8 @@ nav {
 }
 
 .projects-sect {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 1.5em;
   padding-bottom: 3em;
   margin-top: 2rem;
@@ -274,10 +272,10 @@ nav {
 
 .card {
   cursor: pointer;
-  width: 400px;
   height: auto;
-  background-color: rgb(16, 16, 58);
-  color: white;
+  background-color: transparent;
+
+  color: var(--prim-blue);
   overflow: hidden;
   border-radius: 10px;
   flex-grow: 0;
@@ -285,7 +283,7 @@ nav {
 
 .card h3 {
   font-size: clamp(1rem, 8vw, 1.5rem);
-  font-weight: 200;
+  font-weight: 800;
   margin-bottom: 1em;
 }
 
@@ -313,10 +311,14 @@ nav {
   font-weight: 600;
   cursor: pointer;
   background-color: transparent;
-  border: 1px solid lightblue;
-  color: lightblue;
+  border: 2px solid var(--light-blue);
+  color: var(--light-blue);
 }
 
+.card {
+  background-color: rgb(3, 74, 172);
+  color: white;
+}
 
 
 .btn span {
@@ -325,30 +327,42 @@ nav {
 }
 
 .card-options .btn:hover {
-  background-color: lightblue;
-  color: rgb(16, 16, 58);
+  background-color: var(--light-blue);
+  color: var(--prim-blue);
+
 }
 
 .card:hover {
-  background-color: rgb(8, 41, 113);
-  box-shadow: 5px 10px 35px rgba(16, 36, 58, 0.4);
+  background-color: rgb(3, 51, 118);
+  color: white;
+  transform: scale(1.02);
+  box-shadow: 0px 10px 30px rgba(1, 21, 45, 0.532);
 }
 
 .back-top-btn {
   display: block;
-  color: var(--light-blue);
-  background-color: var(--prim-blue);
-  border-radius: 25px;
-  text-decoration: none;
-  padding: 0.5em 1em;
-  font-size: clamp(0.2rem, 8vw, 1.2rem);
+  color: rgb(26, 68, 185);
+  background-color: transparent;
+  border: 3px solid rgb(26, 68, 185);
+  height: 150px;
+  padding: .6em;
+  font-size: clamp(.5rem, 8vw, 2em);
+  text-align: center;
+  line-height: 1em;
+  border-radius: 10px;
   cursor: pointer;
+  font-weight: 800;
   justify-self: center;
+  align-self: center;
+  margin: 1em;
 }
 
+
+
+
 .back-top-btn:hover {
-  transform: scale(1.06);
-  box-shadow: 0px 10px 25px rgba(7, 15, 24, 0.4);
+  transform: scale(1.02);
+  box-shadow: 0px 10px 30px rgba(18, 47, 126, 0.352);
 }
 
 /* Email form ****(MOVED TO SEPARATE PAGE)**** 
