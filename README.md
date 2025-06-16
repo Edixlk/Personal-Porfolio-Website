@@ -73,3 +73,12 @@
 - Minor fixes to navigation bar (mobile) and "get in touch" button.
 
 - Contact button on footer (For larger screens on desktop)
+
+
+## 6.16.25
+
+- All padding on the section tags page have the same padding for a better layout. (skils section excluded)
+
+- Background color change for skill section
+
+- Fixed cards uneven sizing with the height, padding and font size in skills section.
