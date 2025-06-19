@@ -82,3 +82,18 @@
 - Background color change for skill section
 
 - Fixed cards uneven sizing with the height, padding and font size in skills section.
+
+
+## 6.19.25 
+
+- Bg image updated on both main and contact page
+
+- Contact form layout updated
+
+- Footer updated, it has a blur overlay effect
+
+- Contact page layout is now on a different stylesheet
+
+- Footer resdesigned (with icons)
+
+- Other minor ui changers

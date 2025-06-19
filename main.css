@@ -42,8 +42,17 @@ section {
   display: none;
 }
 
-body {
-  background-color: var(--prim-blue);
+
+body,
+.skills-section,
+.proj-section {
+  background-image: url(./assets/bg-image/thumb-1920-1318499.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  background-attachment: fixed;
+  background-color: rgba(1, 12, 28, 0.726);
 }
 
 :root {
@@ -66,7 +75,7 @@ body {
 
 /* HEADER BG IMAGE (HERO SECTION)*/
 header {
-  background-image: url(./assets/bg-image/thumb-1920-1318499.jpeg);
+  background-image: url(./assets/bg-image/thumb-1920-1318499.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -163,6 +172,7 @@ nav {
 .about-sect h1 {
   font-size: clamp(2rem, 8vw, 3rem);
   margin-bottom: 0.5em;
+  text-align: center;
 }
 
 .about-sect p {
@@ -173,8 +183,6 @@ nav {
 /* SKILLS/TECH STACK SECTION */
 
 .skills-section {
-  background-color: rgba(0, 170, 255, 0.096);
-  background-blend-mode: color-burn;
   height: auto;
   gap: 2em;
   padding: 5em clamp(.3rem, 7vw, 10em);
@@ -184,9 +192,9 @@ nav {
 }
 
 .skills-section h2 {
-  text-align: center;
+  text-align: left;
   font-size: clamp(.5rem, 8vw, 2.5rem);
-  padding: 0 1em;
+
   color: var(--light-blue);
   font-family: druk;
   margin-bottom: .8em;
@@ -204,16 +212,16 @@ nav {
 .item {
   border-radius: 10px;
   height: auto;
-  background-color: rgba(2, 39, 113, 0.395);
-  border: 1px solid rgba(0, 162, 255, 0.114);
+  background-color: rgba(5, 61, 173, 0.395);
+  border: 1px solid rgba(0, 162, 255, 0.08);
   box-shadow: 0px 10px 30px rgba(0, 5, 11, 0.231);
   backdrop-filter: blur(14px);
-  color: #fff;
   height: 100px;
   padding: .5em 1em;
   display: flex;
   align-items: center;
   gap: .5em;
+  color:  var(--light-blue);
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -240,7 +248,7 @@ nav {
 .item p {
   font-weight: 400;
   font-size: clamp(.3rem, 8vw, .9rem);
-  color: rgba(255, 255, 255, 0.774);
+  opacity: 70%;
 }
 
 
@@ -253,20 +261,21 @@ nav {
   /*padding: 2em clamp(.3em, 8vw, 30em);*/
   height: auto;
   border-top: 1px solid #a1ccf63e;
-  background-color: rgba(0, 170, 255, 0.096);
+
 }
 
 .proj-section h1 {
   color: var(--light-blue);
   font-size: clamp(2em, 8vw, 2.5rem);
-  text-align: center;
+  text-align: left;
+  margin-bottom: 1em;
 
 }
 
 .projects-sect {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-  gap: 1.5em;
+  gap: 2em;
   padding-bottom: 3em;
   margin-top: 2rem;
 }
@@ -274,7 +283,7 @@ nav {
 .card {
   cursor: pointer;
   height: auto;
-  background-color: rgba(4, 58, 167, 0.169);
+  background-color: rgba(5, 61, 173, 0.395);
   box-shadow: 0px 10px 30px rgba(0, 5, 11, 0.183);
   backdrop-filter: blur(14px);
   overflow: hidden;
@@ -284,7 +293,7 @@ nav {
 
 .card h3 {
   font-size: clamp(1rem, 8vw, 1.5rem);
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 1em;
 }
 
@@ -317,16 +326,9 @@ nav {
 }
 
 
-
-.btn span {
-  margin-right: 5px;
-  fill: currentColor;
-}
-
 .card-options .btn:hover {
   background-color: var(--light-blue);
   color: var(--prim-blue);
-
 }
 
 .card:hover {
@@ -340,18 +342,20 @@ nav {
   display: block;
   color: var(--light-blue);
   background-color: transparent;
-  border: 2px solid var(--light-blue);
-  height: 150px;
-  padding: .6em;
-  font-size: clamp(.5rem, 8vw, 2em);
+  border: 1px solid var(--light-blue);
+  padding: .6em 2em;
+  font-size: clamp(.5rem, 8vw, 1.3em);
   text-align: center;
   line-height: 1em;
   border-radius: 10px;
   cursor: pointer;
-  font-weight: 800;
+  font-weight: 200;
   justify-self: center;
   align-self: center;
-  margin: 1em;
+}
+
+.back-top-btn span {
+  margin-right: 5px;
 }
 
 
@@ -360,7 +364,8 @@ nav {
 .back-top-btn:hover {
   transform: scale(1.02);
   box-shadow: 0px 0px 30px rgba(92, 158, 239, 0.315);
-  
+  background-color: var(--light-blue);
+  color: var(--prim-blue);
 }
 
 /* Email form ****(MOVED TO SEPARATE PAGE)**** 
@@ -373,55 +378,61 @@ nav {
 
 .footer {
   display: flex;
+  flex-direction: column;
   padding: 2em clamp(.5em, 8vw, 4em);
   height: auto;
   width: 100%;
   right: 0;
-  background-color: rgba(4, 54, 111, 0.957);
-  background-blend-mode: darken;
-  box-shadow: 0px -5px 30px rgba(1, 28, 56, 0.199);
-  border-top: 1px solid rgba(92, 158, 239, 0.194);
+  backdrop-filter: blur(14px);
+  background-color: rgba(4, 4, 17, 0.352);
 }
 
 .footer h1 {
   color: var(--white);
-  font-size: clamp(.5rem, 8vw, 1.4rem);
+  font-size: clamp(.5rem, 8vw, 1.2rem);
   margin-bottom: .5em;
-  padding: .3em 0;
+  padding: 1em 0;
   border-bottom: 1px solid rgba(126, 192, 249, 0.393);
   margin-top: 0.5em;
   letter-spacing: 1px;
+  text-align: center;
+  width: 80%;
+  align-self: center;
 }
 
 
 .scl-med {
+  margin-top: 1em;
   padding: 0;
   width: fit-content;
   display: flex;
-  flex-direction: column;
   align-self: center;
-  gap: 1px;
+  gap: 1em;
+  line-height: 50px;
 }
 
 .scl-med a {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 900;
   color: var(--white);
   display: block;
-  opacity: 75%;
   width: fit-content;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-content: center;
+  padding: 1em;
+  border-radius: 50%;
+  border: 1px solid var(--light-blue);
 }
 
 .scl-med a:hover {
-  color: #fff;
+  color: var(--prim-blue);
+  background-color: var(--light-blue);
   opacity: 100%;
 }
 
 
-#contact-foot-link {
-  /* this should only be visible on desktop or larger */
-  color: #00b3ff;
-}
 
 .get-in-touch {
   padding: 0.5em 1em;
@@ -434,11 +445,12 @@ nav {
   font-size: 1rem;
   line-height: 1em;
   border-radius: 50%;
-  border: 2px solid #00b3ff;
+  border: 1px solid #a1ccf62e;
   z-index: 1;
   cursor: pointer;
   box-shadow: 5px 5px 25px rgba(16, 36, 58, 0.635);
-  background-color: rgba(8, 41, 113, 0.639);
+  background-color: rgba(5, 79, 240, 0.45);
+  backdrop-filter: blur(14px);
   color: white;
   display: none;
 }
@@ -449,165 +461,7 @@ nav {
   border: transparent;
 }
 
-
-/* ====================== FOR CONTACT FORM ======================================*/
-
-
-body {
-  background-image: url(./assets/bg-image/thumb-1920-1318499.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: color-dodge;
-  background-attachment: fixed;
-  background-color: var(--prim-blue-bg);
-  height: 100dvh;
-  height: auto;
-}
-
-
-.contact-main button {
-  border-radius: 25px;
-}
-
-.contact-main {
-  height: 100dvh;
-  display: grid;
-
-  place-content: center;
-  flex-direction: column;
-  color: var(--light-blue);
-}
-
-.cont-txt-sect h3 {
-  text-align: center;
-  font-family: druk;
-  width: 100%;
-  font-size: clamp(1rem, 8vw, 2rem);
-  line-height: 1.3em;
-  margin-bottom: 1em;
-}
-
-.contact-main h1 {
-  text-align: center;
-  font-size: clamp(2rem, 8vw, 2.5rem);
-  color: #a1cbf6;
-  width: 100%;
-}
-
-
-input,
-button {
-  border-radius: 5px;
-}
-
-form {
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  padding: .5em 2em;
-  gap: 16px;
-  height: auto;
-  width: 350px;
-}
-
-label {
-  text-align: left;
-  font-weight: 500;
-  color: var(--light-blue);
-  opacity: 80%;
-}
-
-input {
-  padding: 0.8em 0.5em;
-  border-radius: 0;
-  background-color: transparent;
-  border-bottom: 1px solid #a1ccf670;
-  color: #fff;
-  font-weight: 300;
-  font-size: 1rem;
-}
-
-
-
-input:focus-visible {
-  color: white;
-  border-bottom: 1px solid #1e80e1;
-}
-
-input:first-of-type {
-  margin-bottom: 1em;
-}
-
-.sub-btn {
-  font-weight: 600;
-  padding: 0.5em 1em;
-  border: 1px solid var(--light-blue);
-  font-size: 1.3rem;
-  cursor: pointer;
-  background-color: transparent;
-  color: #a1cbf6;
-  margin-top: 1em;
-}
-
-.sub-btn {
-  position: relative;
-  bottom: -20px;
-}
-
-.sub-btn:hover {
-  background-color: #a1cbf6;
-  color: var(--prim-blue);
-  border-bottom: 1px solid #a1cbf6;
-}
-
-.bck-to-home button {
-  position: fixed;
-  top: 5%;
-  left: 2%;
-  padding: 0.5em;
-  width: fit-content;
-  font-size: 1.3rem;
-  align-content: center;
-  text-align: center;
-  background-color: transparent;
-  color: #a1cbf6;
-  border: 1px solid #a1cbf6;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 25px;
-  justify-items: center;
-}
-
-
-.bck-to-home button:hover {
-  color: var(--prim-blue);
-  background-color: #a1cbf6;
-}
-
-.email-msg {
-  animation: fadein 0.5s 0.2ms 1;
-  z-index: 1;
-  text-align: center;
-  margin-top: 1em;
-  padding: 1.5em 2em;
-  border-radius: 10px;
-}
-
-.txt {
-  display: block;
-  font-weight: 500;
-}
-
-#Sucesstxt {
-  color: rgb(208, 219, 234);
-}
-
-#Errtxt {
-  color: rgb(255, 0, 8);
-}
-
+/* CONTACT FORM STYLESHEET MOVED AS OF 6.19.25 */
 
 
 /*  med */

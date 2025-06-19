@@ -1,0 +1,81 @@
+<!--FOR dev BRANCH-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--remixicons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <!--email.js-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Ecy8q4NxOnQcBQVPd",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+
+    <main class="contact-main">
+
+
+        <section class="cont-txt-sect">
+
+            <h1>Get in touch</h1>
+
+            <!--form -->
+            <form onsubmit="return false;">
+
+
+
+                <label for="name">Name:</label>
+                <input type="text" id="name"></input>
+
+                <label for="emailadr" class="form" style="margin-top: 2em;">Email:</label>
+                <input type="email" id="emailadr" class="form" required>
+
+
+                <button onclick="Sendmail()" type="submit" class="sub-btn">Submit</button>
+
+                <!-- this leads back to the main page -->
+                <a href="/index.html">Go to home page</a>
+
+
+                <!--messages for when an email was sent and not sent.-->
+                <div class="email-msg" id="msgpopup">
+
+                    <p class="txt" id="Sucesstxt"></p>
+                    <p class="txt" id="Errtxt"></p>
+
+                </div>
+
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+
+
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>

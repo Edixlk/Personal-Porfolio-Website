@@ -1,0 +1,221 @@
+/* FOR dev BRANCH */
+/* google icon style*/
+.material-symbols-outlined {
+  color: white;
+  display: none;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(./assets/fonts/HostGrotesk-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: druk;
+  src: url(./assets/fonts/Druk\ Wide\ Bold\ Regular.ttf);
+}
+
+/* =============== BASIC LAYOUT ==============*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+main,
+section {
+  height: 100svh;
+  padding: 0 .5em;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  font-family: font1;
+  transition: .3s ease-in-out;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--prim-blue);
+}
+
+:root {
+  --prim-blue: rgb(1, 7, 22);
+  --prim-blue-bg: rgba(4, 9, 22, 0.824);
+  --white: rgb(172, 208, 231);
+  --light-blue: #a1cbf6;
+}
+
+::selection {
+  color: #fff;
+  background-color: rgb(3, 82, 173);
+}
+
+
+/*=========================================*/
+
+/* ====================== FOR CONTACT FORM ======================================*/
+
+
+body {
+  background-image: url(./assets/images/thumb-1920-1318499.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  background-attachment: fixed;
+  background-color: rgba(1, 12, 28, 0.726);
+}
+
+
+
+
+.bck-home-btn {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  padding: .3em;
+  z-index: 1;
+  line-height: 40px;
+  border: 1px solid var(--light-blue);
+  height: auto;
+  text-align: center;
+  align-content: center;
+  border-radius: 25px;
+  color: var(--light-blue);
+
+}
+
+
+
+
+.bck-home-btn:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+.contact-main {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cont-txt-sect {
+  border-radius: 12px;
+  padding: 1em;
+  margin-top: 1em;
+  align-content: center;
+  height: auto;
+  width: 400px;
+  height: auto;
+  background-color: #02213f71;
+  border: 1px #41a0ff13 solid;
+  backdrop-filter: blur(24px);
+  color: var(--light-blue);
+  box-shadow: 10px 10px 30px black;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.235);
+}
+
+.cont-txt-sect h1 {
+  font-family: druk;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+form a {
+  color: var(--light-blue);
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 1em;
+  opacity: 70%;
+}
+
+form a:hover {
+  color: white;
+  opacity: 80%;
+}
+
+input {
+  margin: .3em 0;
+  color: var(--light-blue);
+  padding: 1em .4em;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: transparent;
+  border-bottom: 1px solid #a1ccf6b4;
+}
+
+input:focus-within {
+  border-bottom: 1px rgba(0, 225, 255, 0.61) solid;
+}
+
+label {
+  font-size: .8rem;
+}
+
+
+.sub-btn {
+  border-radius: 25px;
+}
+
+.sub-btn {
+  margin-top: 2em;
+  font-size: 1.2rem;
+  padding: .5em 0;
+  border: 1px solid var(--light-blue);
+  color: var(--light-blue);
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sub-btn:hover {
+  color: var(--prim-blue-bg);
+  background-color: lightblue;
+}
+
+
+.email-msg {
+  margin-top: 16px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+
+#Sucesstxt {
+  color: rgb(0, 191, 255);
+}
+
+#Errtxt {
+  color: rgb(245, 81, 5);
+}
