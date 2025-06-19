@@ -144,6 +144,7 @@ nav {
 
 .contin-btn {
   padding: .3em 2em;
+  display: block;
   line-height: normal;
   border-radius: 30px;
   font-size: clamp(1rem, 8vw, 1.5em);
@@ -158,6 +159,7 @@ nav {
 .contin-btn:hover {
   background-color: var(--light-blue);
   color: var(--prim-blue);
+   box-shadow: 0px 0px 30px rgba(92, 158, 239, 0.315);
 }
 
 /* ABOUT SECTION (SECOND SECTION/PAGE )*/
