@@ -159,9 +159,6 @@ form a {
   margin: auto;
 }
 
-* {
-  border: 1px solid red;
-}
 
 form a:hover {
   color: white;
