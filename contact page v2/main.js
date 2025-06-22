@@ -1,4 +1,6 @@
-// ***FOR main BRANCH***
+
+
+const app = initializeApp(firebaseConfig);
 
 
 // FOR MOBILE NAVBAR

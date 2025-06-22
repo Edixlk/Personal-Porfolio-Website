@@ -105,12 +105,6 @@ body {
 }
 
 
-
-
-
-
-
-
 .contact-main {
   height: 100svh;
   display: flex;
@@ -139,6 +133,7 @@ body {
   font-family: druk;
   font-size: 1.5rem;
   font-weight: 200;
+  margin-bottom: 1.4em;
 }
 
 
