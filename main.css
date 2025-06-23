@@ -108,8 +108,7 @@ nav {
 }
 
 .nav-links a:hover {
-
-  backdrop-filter: blur(40px);
+  background-color: #1882eb1f;
   color: #fff;
 }
 
