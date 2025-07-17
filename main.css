@@ -8,12 +8,12 @@
 
 @font-face {
   font-family: font1;
-  src: url(./assets/fonts/Host_Grotesk/HostGrotesk-VariableFont_wght.ttf) format('woff2');
+  src: url(./assets/fonts/Host_Grotesk/HostGrotesk-VariableFont_wght.ttf) ;
 }
 
 @font-face {
   font-family: druk;
-  src: url(./assets/fonts/Druk\ Wide\ Bold\ Regular.ttf) format('woff2');
+  src: url(./assets/fonts/Druk\ Wide\ Bold\ Regular.ttf) ;
 }
 
 /* =============== BASIC LAYOUT ==============*/
@@ -298,6 +298,22 @@ nav {
   overflow: hidden;
   border-radius: 10px;
   flex-grow: 0;
+}
+
+.card .new-txt {
+   background-color:var(--light-blue);
+   color: var(--prim-blue);
+   font-weight: 600;
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: 5px;
+   left: 5px;
+   border-radius: 50%;
+   text-align: center;
+   display: grid;
+   place-content: center;
+   border: 1px solid var(--prim-blue);
 }
 
 .card h3 {
