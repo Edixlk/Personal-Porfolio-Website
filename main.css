@@ -31,6 +31,7 @@ html {
   outline: none;
   text-decoration: none;
   font-family: font1;
+  font-display: swap;
   transition: .3s ease-in-out;
 }
 

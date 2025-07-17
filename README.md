@@ -1,16 +1,16 @@
 # Personal Porfolio
 
-![Website Screenshot ](/Descripton%20screenshot.png)
+![Website Screenshot](/Description_screenshot.png)
 
-### updates
+# updates
 
-#### 3.9.25
+## 3.9.25
 
 - added projects section
 - fixed up the footer a bit
 - minor fixes to padding on each section.
 
-#### 3.10.25
+## 3.10.25
 
 - Fixed responsiveness with the cards in the projects section
 
@@ -20,7 +20,7 @@
 
 - {scroll-behavior: smooth;} has been added to make switching between sections has a smooth animation.
 
-### 3.12.25
+## 3.12.25
 
 - Added cv and contact button (for email) to navigaton bar **_(REMOVED)_**
 
@@ -28,7 +28,7 @@
 
 - changed color for footer, header along with the buttons
 
-### 5.17.25
+## 5.17.25
 
 - Minor fixes to Email form.
 - New `::selection` bg color and text color added, matching the look and feel.
