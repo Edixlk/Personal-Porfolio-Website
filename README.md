@@ -96,4 +96,9 @@
 
 - Footer resdesigned (with icons)
 
-- Other minor ui changers
+- Other minor ui changes
+
+## 7.17.25
+
+- Added new project to "projects" section
+- Removed "back to top" button on same page.
