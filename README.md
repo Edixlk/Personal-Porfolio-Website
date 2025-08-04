@@ -1,7 +1,6 @@
-# Personal Porfolio (DEV BRANCH)
+# Personal Porfolio (dev branch)
 
 https://personal-porfolio-website-sjyr.vercel.app/
-
 
 # updates
 
