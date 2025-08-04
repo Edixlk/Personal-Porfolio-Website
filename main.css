@@ -35,6 +35,12 @@ html {
   transition: .3s ease-in-out;
 }
 
+
+h1, h2, h3 {
+  letter-spacing: 0.2;
+  font-weight: 200;
+}
+
 section {
   padding: 2em clamp(1em, 7vw, 100em);
 }
@@ -44,17 +50,7 @@ section {
 }
 
 
-body,
-.skills-section,
-.proj-section {
-  background-image: url(./assets/bg-image/thumb-1920-1318499.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: color-dodge;
-  background-attachment: fixed;
-  background-color: rgba(1, 12, 28, 0.726);
-}
+
 
 :root {
   --prim-blue: rgb(1, 7, 22);
@@ -74,49 +70,63 @@ body,
 
 /*=========================================*/
 
-/* HEADER BG IMAGE (HERO SECTION)*/
-header {
-  background-image: url(./assets/bg-image/thumb-1920-1318499.jpg);
+/*  BG IMAGE (BODY)*/
+body {
+  background-image: url(./assets/bg-image/thumb-1920-1318499.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-blend-mode: color-dodge;
   background-attachment: fixed;
-  background-color: var(--prim-blue-bg);
-  height: 100svh;
+  background-color: rgba(4, 4, 30, 0.81);
+}
+
+#header {
+   height: 110vh;
+   padding-bottom: 1em;
 }
 
 /* NAVBAR*/
 
 nav {
+  position: fixed;
   z-index: 1;
+  height: 20px;
+  line-height: 20px;
   width: 100%;
-  height: 80px;
-  line-height: 80px;
+  height: auto;
+  padding: 1em;
   display: inline-flex;
   justify-content: center;
   padding: clamp(.2em, 8vw, .5em);
 }
 
+nav {
+  background-color: rgba(2, 34, 86, 0.493);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #ffffff0c;
+}
+
 .nav-links a {
   color: var(--light-blue);
-  font-size: clamp(.2rem, 8vw, 1.3rem);
+  font-size: clamp(.2rem, 8vw, 1rem);
   border-radius: 20px;
-  padding: 0.2em 0.8em;
+  padding: 0.4em 0.8em;
   margin: 0 0.2em;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-family: druk;
+  letter-spacing: 1px;
 }
 
 .nav-links a:hover {
-  background-color: #1882eb1f;
+  background-color: #0981f93e;
   color: #fff;
 }
 
 /* only for contact button (last link on navbar)*/
 
 #contact-link {
-  border: 1px solid var(--light-blue);
+  border: 1.5px solid var(--light-blue);
 }
 
 #contact-link:hover {
@@ -131,39 +141,35 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80dvh;
+  height: 100dvh;
   color: var(--light-blue);
   text-align: center;
 }
 
 .hero-section h1 {
-  font-size: clamp(2.3em, 8vw, 5rem);
+  font-size: clamp(2.3em, 8vw, 4rem);
   text-align: center;
 }
 
 .hero-section p {
   font-weight: 300;
-  font-size: clamp(1.3rem, 4vw, 2.3rem);
+  font-size: clamp(1.3rem, 4vw, 2rem);
 }
 
 .contin-btn {
-  padding: .3em 2em;
-  display: block;
-  line-height: normal;
-  border-radius: 30px;
-  font-size: clamp(1rem, 8vw, 1.5em);
-  background-color: transparent;
-  border: 2px solid var(--light-blue);
-  color: var(--white);
-  cursor: pointer;
-  align-content: center;
-  margin-top: 1em;
+ color: var(--light-blue);
+ display: block;
+ width: fit-content;
+ font-size: clamp(2rem, 1rem + 8vw, 4rem);
+
+ position: absolute;
+ bottom: 10%;
 }
 
+
 .contin-btn:hover {
-  background-color: var(--light-blue);
-  color: var(--prim-blue);
-   box-shadow: 0px 0px 30px rgba(92, 158, 239, 0.315);
+  transform: scale(1.05);
+ 
 }
 
 /* ABOUT SECTION (SECOND SECTION/PAGE )*/
@@ -180,7 +186,7 @@ nav {
 }
 
 .about-sect h1 {
-  font-size: clamp(2rem, 8vw, 3rem);
+  font-size: clamp(2rem, 8vw, 2.5rem);
 }
 
 .about-sect p {
@@ -324,12 +330,12 @@ nav {
 
 .card img {
   width: 100%;
-  aspect-ratio: 16/10;
+  aspect-ratio: 16/9;
   object-fit: cover;
 }
 
 .card-details {
-  text-align: left;
+   text-align: left;
   padding: 1.3em 1.2em;
   height: auto;
 }
@@ -342,13 +348,28 @@ nav {
 .card-options .btn {
   padding: 0.3em .8em;
   border-radius: 25px;
-  font-size: clamp(0.6rem, 8vw, 1.1rem);
+  font-size: clamp(0.6rem, 8vw, 1rem);
   font-weight: 600;
   cursor: pointer;
   background-color: transparent;
-  border: 1px solid var(--light-blue);
+  border: 1.5px solid var(--light-blue);
   color: var(--light-blue);
 }
+
+.card-options span {
+  margin-right: 5px;
+}
+
+.btn[data-icon="live-icon"]::before{
+  content: "";
+  background-image: url(./assets/icons/live-site.svg);
+  color: var(--light-blue);
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  display: block;
+}
+
 
 
 .card-options .btn:hover {
@@ -414,15 +435,15 @@ nav {
 
 .footer h1 {
   color: var(--white);
-  font-size: clamp(.5rem, 8vw, 1.2rem);
+  font-size: clamp(.5rem, 8vw, 1rem);
   margin-bottom: .5em;
   padding: 1em 0;
   border-bottom: 1px solid rgba(126, 192, 249, 0.393);
   margin-top: 0.5em;
   letter-spacing: 1px;
-  text-align: center;
-  width: 80%;
-  align-self: center;
+  text-align: left;
+  width:  50%;
+  align-self: left;
 }
 
 
@@ -431,7 +452,7 @@ nav {
   padding: 0;
   width: fit-content;
   display: flex;
-  align-self: center;
+  align-self: left;
   gap: 1em;
   line-height: 50px;
 }
@@ -442,13 +463,13 @@ nav {
   color: var(--white);
   display: block;
   width: fit-content;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   display: grid;
   place-content: center;
   padding: 1em;
   border-radius: 50%;
-  border: 1px solid var(--light-blue);
+  border: 1.5px solid var(--light-blue);
 }
 
 .scl-med a:hover {
@@ -534,6 +555,16 @@ nav {
     color: var(--light-blue);
   }
 
+
+  /* navbar */
+
+  /* this should be ONLY visible on desktop */
+
+  nav {
+  background-color: transparent;
+  backdrop-filter: none;
+}
+
   .nav-links {
     box-shadow: 0px 0px 15px rgba(11, 22, 35, 0.422);
     background-color: rgb(1, 19, 35);
@@ -580,16 +611,13 @@ nav {
   /* hero section */
 
   .hero-section {
-     display: grid;
-     place-content: center;
-     height: 100svh;
-     text-align: center;
+    height: 100svh;
+    display: flex;
   }
 
 
-  .hero-section button {
-    justify-self:  center;
-  }
+
+
 
   /* about section */
 
