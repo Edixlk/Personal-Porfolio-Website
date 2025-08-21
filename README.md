@@ -1,6 +1,6 @@
 # Personal Porfolio (dev branch)
 
-https://personal-porfolio-website-sjyr.vercel.app/
+https://dev-branch-portfolio.vercel.app/
 
 # updates
 
@@ -102,3 +102,4 @@ https://personal-porfolio-website-sjyr.vercel.app/
 
 - Added new project to "projects" section
 - Removed "back to top" button on same page.
+
