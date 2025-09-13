@@ -102,7 +102,6 @@ nav {
 
 .nav-links {
   display: flex;
-  gap: .2rem;
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(22, 120, 249, 0.231);
@@ -116,7 +115,6 @@ nav {
 }
 
 .nav-links a {
-  width: 100px;
   text-align: center;
   align-content: center;
   color: var(--light-blue);
@@ -474,25 +472,23 @@ nav {
 .scl-med {
   margin-top: 0.4em;
   padding: 0;
+  gap: 1em;
   width: fit-content;
   display: flex;
   align-self: left;
-  gap: .5em;
   line-height: 50px;
 }
 
 .scl-med a {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 900;
   color: var(--white);
   display: block;
   display: grid;
   place-content: center;
   text-align: center;
-  font-weight: 6m00;
   opacity: 70%;
-  padding: 0 .5rem;
-  width: 100px;
+
 }
 
 
