@@ -1,0 +1,6 @@
+---HEADER---
+Here's a proper paragraph that frames your story in a professional and convincing way for a frontend development portfolio.
+
+---
+
+My journey into web development began in 2022, ignited by a passion that grew after my team won a hackathon for the best-looking website. Since then, I've dedicated myself to mastering the core technologies of the web: HTML, CSS, and JavaScript. Despite facing time constraints and other challenges, my self-discipline and persistence have allowed me to consistently build my skills. I firmly believe that **slow progress is better than no progress**, and this resilient mindset ensures that I am always moving forward, learning new concepts, and delivering high-quality work. I'm now eager to apply these skills to create compelling, user-friendly websites for clients and collaborate on exciting new projects.
