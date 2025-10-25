@@ -412,19 +412,6 @@ nav {
   background-color: rgba(4, 4, 17, 0.352);
 }
 
-.footer h1 {
-  color: var(--white);
-  font-size: clamp(.5rem, 8vw, 1.2rem);
-  margin-bottom: .5em;
-  padding: 1em 0;
-  border-bottom: 1px solid rgba(126, 192, 249, 0.393);
-  margin-top: 0.5em;
-  letter-spacing: 1px;
-  text-align: center;
-  width: 80%;
-  align-self: center;
-}
-
 
 .scl-med {
   margin-top: 1em;
