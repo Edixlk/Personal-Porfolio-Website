@@ -1,7 +1,7 @@
 this is the information for each section for the site.
-# About me 
 
-No info as yet.
+
+### About me 
 
 ### Skills 
 
