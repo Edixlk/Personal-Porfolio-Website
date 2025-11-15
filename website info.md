@@ -1,8 +1,5 @@
 this is the information for each section for the site.
 
-
-### About me 
-
 ### Skills 
 
 - HTML
@@ -19,3 +16,4 @@ this is the information for each section for the site.
 ### Email Address (for footer and contact page):
 
 ###### Edixlk14@gmail.com
+
