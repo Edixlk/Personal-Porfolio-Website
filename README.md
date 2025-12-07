@@ -1,16 +1,14 @@
 # Personal Porfolio
 
-![Website Screenshot](/Description_screenshot.png)
+## updates
 
-# updates
-
-## 3.9.25
+### 3.9.25
 
 - added projects section
 - fixed up the footer a bit
 - minor fixes to padding on each section.
 
-## 3.10.25
+### 3.10.25
 
 - Fixed responsiveness with the cards in the projects section
 
@@ -20,7 +18,7 @@
 
 - {scroll-behavior: smooth;} has been added to make switching between sections has a smooth animation.
 
-## 3.12.25
+### 3.12.25
 
 - Added cv and contact button (for email) to navigaton bar **_(REMOVED)_**
 
@@ -28,7 +26,7 @@
 
 - changed color for footer, header along with the buttons
 
-## 5.17.25
+### 5.17.25
 
 - Minor fixes to Email form.
 - New `::selection` bg color and text color added, matching the look and feel.
@@ -37,11 +35,11 @@
 - Mobile navbar added (see screenshot below)
 
 
-## 5.20.25
+### 5.20.25
 
 - Added now responsive projects section
 
-## 5.21.25
+### 5.21.25
 
 - Cards now have links with the matching images
 
@@ -53,7 +51,7 @@
 
 - Removed contact form (was located on top of footer).
 
-## 5.25.25
+### 5.25.25
 
 - Contact form page is fully functional and is powered by [Email.js](https://www.emailjs.com/)
 
@@ -68,14 +66,14 @@
 - Fixed mobile/devices with smaller screens. It would remain visible when scrolling.
 
 
-## 5.29.25
+### 5.29.25
 
 - Minor fixes to navigation bar (mobile) and "get in touch" button.
 
 - Contact button on footer (For larger screens on desktop)
 
 
-## 6.16.25
+### 6.16.25
 
 - All padding on the section tags page have the same padding for a better layout. (skils section excluded)
 
@@ -84,7 +82,7 @@
 - Fixed cards uneven sizing with the height, padding and font size in skills section.
 
 
-## 6.19.25 
+### 6.19.25 
 
 - Bg image updated on both main and contact page
 
@@ -98,7 +96,8 @@
 
 - Other minor ui changes
 
-## 7.17.25
+### 7.17.25
 
 - Added new project to "projects" section
 - Removed "back to top" button on same page.
+
