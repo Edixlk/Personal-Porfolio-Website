@@ -3,7 +3,11 @@
 .material-symbols-outlined {
   color: white;
   display: none;
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
 @font-face {
@@ -473,10 +477,6 @@ nav {
 
   .nav-links a {
     font-family: druk;
-  }
-
-  * {
-    border:1px solid  red;
   }
 
   .nav-links a,
