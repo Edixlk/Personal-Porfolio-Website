@@ -464,31 +464,32 @@ nav {
     position: absolute;
     top: 60px;
     right: 20px;
-    flex-direction: column;
     width: 50%;
-    display: none;
     overflow: hidden;
     border-radius: 10px;
+    display: none; /* this should ALWAYS set to none for the user on medium - smaller screens. */
+    flex-direction: column;
   }
 
   .nav-links a {
     font-family: druk;
   }
 
+  * {
+    border:1px solid  red;
+  }
+
   .nav-links a,
   #active {
     background-color: transparent;
     height: 50px;
+    line-height: 50px;
     margin: 0;
-    line-height: 42px;
     border-radius: 0;
     font-size: 1rem;
     font-weight: 800;
     text-align: center;
-  }
-
-  .nav-links a:nth-child(-n + 3) {
-    border-bottom: 1px solid rgba(163, 218, 241, 0.349);
+    padding-bottom: 0;
   }
 
   /* this color is a bit lighter than the active id on link.*/

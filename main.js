@@ -4,10 +4,17 @@ let MenuBtn = document.getElementById("Hamburg-menu");
 
 let NavigLinks = document.getElementById("navlinks");
 
+
+//This is to open and close the mobile navigation bar on medium - smaller screens.
+
 function Open() {
-  if (NavigLinks.style.display = "none") {
-    NavigLinks.style.display = "flex";
+  var y = document.getElementById("navlinks");
+
+  //strict equality (===) operator
+
+  if (y.style.display === "flex") { 
+    y.style.display = "none";
   } else {
-    NavigLinks.style.display = "none";
+    y.style.display = "flex";
   }
 }
