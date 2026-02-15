@@ -12,4 +12,6 @@ More stuff will be added soon.
 If you discover any bugs or issues with the site itself, don't hesitate to create a issue on the repo or email me at edixlk14@gmail.com
 
 
+# Preview image 
 
+![website-screenshot-full](./preview.png)
