@@ -409,7 +409,9 @@ nav {
     cursor: pointer;
     height: 40px;
     width: 40px;
-    background-color: rgb(3, 82, 173);
+  border: 1px solid var(--light-blue);
+  background-color: rgba(4, 4, 30, 0.321);
+  backdrop-filter: blur(13px);
     border-radius: 25px;
     text-align: center;
     align-content: center;
