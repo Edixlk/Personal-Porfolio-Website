@@ -277,7 +277,8 @@ nav {
 
 .card:hover {
   transform: scale(1.02);
-  box-shadow: 8px 8px 0px 0px var(--light-blue);
+  color: white;
+  box-shadow: 6px 6px 0px 0px var(--light-blue);
 }
 
 .new-txt {
@@ -308,14 +309,17 @@ nav {
 }
 
 .card-options .btn {
-  padding: 0.3em 0.8em;
+ text-align: center;
   border-radius: 25px;
-  font-size: clamp(0.6rem, 8vw, 1.1rem);
+  width: 60px;
+  height: 60px;
+  font-size: 1em;
   font-weight: 600;
   cursor: pointer;
   background-color: transparent;
   border: 1px solid var(--light-blue);
   color: var(--light-blue);
+  font-size: 1.5em;
 }
 
 .card-options .btn:hover {
