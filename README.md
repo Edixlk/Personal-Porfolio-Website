@@ -14,4 +14,4 @@ If you discover any bugs or issues with the site itself, don't hesitate to creat
 
 # Preview image 
 
-![website-screenshot-full](./preview.png)
+![website-screenshot-full](preview.png)
